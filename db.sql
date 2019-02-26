@@ -1,0 +1,12 @@
+DROP DATABASE  IF EXISTS shadyhotel;
+CREATE DATABASE shadyhotels;
+USE shadyhotels;
+CREATE TABLE customers(
+userid int(10) NOT NULL AUTO_INCREMENT,
+Fullname VARCHAR (50) NOT NULL DEFAULT,
+Email VARCHAR (50) NOT NULL DEFAULT,
+Password VARCHAR (50) NOT NULL DEFAULT,
+Username VARCHAR (50) NOT NULL DEFAULT,
+PRIMARY KEY(password),
+UNIQUE KEY(email),
+UNIQUE  KEY(username));
